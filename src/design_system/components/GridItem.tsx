@@ -1,14 +1,18 @@
 import React from 'react';
 import { Box, BoxProps } from './Box';
-import { generateGridItemDisplay } from './gridHelpers';
+import { generateGridItemDisplay } from '../theme/gridHelpers';
 
 export const GridItem = ({
-  spans = { initial: '2', md: '12' },
+  gridColumn = { initial: '2', md: '12' },
   children,
   ...restProps
 }: Omit<BoxProps, 'span'>): JSX.Element => {
   return (
-    <Box spans={spans} display={generateGridItemDisplay(spans)} {...restProps}>
+    <Box
+      gridColumn={gridColumn}
+      display={generateGridItemDisplay(gridColumn)}
+      {...restProps}
+    >
       {children}
     </Box>
   );

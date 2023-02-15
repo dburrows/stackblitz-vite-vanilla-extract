@@ -1,6 +1,6 @@
 import React, { createElement, AllHTMLAttributes } from 'react';
 import classNames, { Argument } from 'classnames';
-import { sprinkles, Sprinkles } from './sprinkles.css';
+import { sprinkles, Sprinkles } from '../theme/sprinkles.css';
 
 type HtmlProperties = Omit<
   AllHTMLAttributes<HTMLElement>,

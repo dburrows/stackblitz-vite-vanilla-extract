@@ -10,6 +10,42 @@ export const breakpoints = {
   xl: 'screen and (min-width: 1280px)',
 };
 
+/*
+https://huemint.com/website-magazine/#palette=fdffff-76d3f4-0d0f0e-f19120
+
+white #fdffff
+lightblue #76d3f4
+black #0d0f0e - text
+grey #5a5552 - accent
+
+combos
+
+white background / black text
+blue background / black text
+grey background / white text
+*/
+
+/*
+APP
+
+https://huemint.com/bootstrap-plus/#palette=cbdfdf-ffffff-101314-0d4759-3d7385-439aa2-244a5e-217295-a9cacf
+
+white:      #ffffff,
+light:      #cbdfdf,
+dark:       #101314,
+primary:    #0d4759,
+secondary:  #3d7385,
+info:       #439aa2,
+accent1:    #244a5e,
+accent2:    #217295,
+accent3:    #a9cacf,
+success:    #13a456,
+warning:    #e7c914,
+danger:     #f4081e,
+
+
+*/
+
 const tokenColours = {
   purple50: '#EEEAF6',
   purple100: '#E1D7F6',

@@ -101,6 +101,10 @@ const responsiveProperties = defineProperties({
     backgroundSize: ['cover', 'contain'],
     backgroundRepeat: ['no-repeat'],
     borderRadius: vars.radii,
+    borderTopLeftRadius: vars.radii,
+    borderTopRightRadius: vars.radii,
+    borderBottomLeftRadius: vars.radii,
+    borderBottomRightRadius: vars.radii,
     borderStyle: borderStyles,
     borderWidth: borderWidths,
     outline: ['none'],
@@ -112,14 +116,7 @@ const responsiveProperties = defineProperties({
     cursor: ['pointer'],
   },
   shorthands: {
-    direction: ['flexDirection'],
-    justify: ['justifyContent'],
-    wrap: ['flexWrap'],
-    shrink: ['flexShrink'],
-    grow: ['flexGrow'],
-    basis: ['flexBasis'],
-    spans: ['gridColumn'],
-    bc: ['backgroundColor'],
+    // margin
     m: ['margin'],
     mx: ['marginLeft', 'marginRight'],
     my: ['marginTop', 'marginBottom'],
@@ -127,6 +124,7 @@ const responsiveProperties = defineProperties({
     mb: ['marginBottom'],
     ml: ['marginLeft'],
     mr: ['marginRight'],
+    // padding
     p: ['padding'],
     px: ['paddingLeft', 'paddingRight'],
     py: ['paddingTop', 'paddingBottom'],
@@ -134,7 +132,10 @@ const responsiveProperties = defineProperties({
     pb: ['paddingBottom'],
     pl: ['paddingLeft'],
     pr: ['paddingRight'],
-    radius: ['borderRadius'],
+    // border radius
+    r: ['borderRadius'],
+    rt: ['borderTopLeftRadius', 'borderTopRightRadius'],
+    rb: ['borderBottomLeftRadius', 'borderBottomRightRadius'],
   },
 });
 
