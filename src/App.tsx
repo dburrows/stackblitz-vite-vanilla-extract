@@ -2,6 +2,8 @@ import { useState } from 'react';
 import reactLogo from './assets/react.svg';
 import { container } from './App.css';
 import { Box } from './design_system/components/Box';
+import { Grid } from './design_system/components/Grid';
+import { GridItem } from './design_system/components/GridItem';
 
 function App() {
   const [count, setCount] = useState(0);
@@ -32,6 +34,23 @@ function App() {
           buzz
         </Box>
       </Box>
+
+      <Grid
+        gridColumn={{
+          initial: 2,
+          md: 3,
+        }}
+      >
+        <GridItem p={2} m={2} backgroundColor="primaryOrange" flexGrow={1}>
+          foo bar
+        </GridItem>
+        <GridItem p={2} m={2} backgroundColor="primaryOrange" flexGrow={1}>
+          bar
+        </GridItem>
+        <GridItem p={2} m={2} backgroundColor="primaryOrange" flexGrow={1}>
+          buzz
+        </GridItem>
+      </Grid>
     </div>
   );
 }

@@ -1,25 +1,25 @@
-import { GridItemVariants } from './GridItem';
+import { GridItemVariants } from '../components/GridItem';
 
 interface IGridItem {
   [key: string]: string;
 }
 
 export const generateGridItemDisplay = (
-  spans: GridItemVariants['spans']
+  gridColumns: GridItemVariants['gridColumn']
 ): IGridItem =>
-  typeof spans === 'object'
-    ? Object.entries(spans).reduce(
+  typeof gridColumns === 'object'
+    ? Object.entries(gridColumns).reduce(
         (acc, [key, value]) => ({
           ...acc,
           [key]: value === 0 ? 'none' : 'unset',
         }),
         {}
       )
-    : spans === 0
+    : gridColumns === 0
     ? 'none'
     : 'unset';
 
-export const generateGridItemSpans = (cols = 12): IGridItem => {
+export const generateGridItemColumns = (cols = 12): IGridItem => {
   return [...Array(cols + 1)].reduce(
     (previous, _, i) => ({
       ...previous,

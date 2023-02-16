@@ -3,7 +3,7 @@ import vars, {
   borderStyles,
   borderWidths,
   breakpoints,
-  gridSpans,
+  gridColumns,
   sizes,
 } from './vars.css';
 
@@ -90,7 +90,7 @@ const responsiveProperties = defineProperties({
       'unset',
       0,
     ],
-    gridColumn: gridSpans,
+    gridColumn: gridColumns,
     columnGap: vars.space,
     rowGap: vars.space,
     gap: vars.space,

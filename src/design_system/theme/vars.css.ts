@@ -1,5 +1,5 @@
 import { createGlobalTheme } from '@vanilla-extract/css';
-import { generateGridItemSpans } from './gridHelpers';
+import { generateGridItemColumns } from './gridHelpers';
 
 export const breakpoints = {
   initial: {},
@@ -199,7 +199,7 @@ export const sizes = {
   fitContent: 'fit-content',
 };
 
-export const gridSpans = generateGridItemSpans();
+export const gridColumns = generateGridItemColumns();
 
 export const borderStyles = {
   none: 'none',
